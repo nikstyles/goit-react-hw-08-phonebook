@@ -1,0 +1,33 @@
+.user {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (min-width: 1140px) {
+  .user {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.title_welcome {
+  color: #fff;
+}
+
+.logout_btn {
+  padding: 5px;
+  margin-left: 10px;
+
+  background: #26273b;
+  color: #6afff3;
+  border: 1px solid #6afff3;
+  border-radius: 5px;
+}
+
+.logout_btn:hover {
+  cursor: pointer;
+  background: #6afff3;
+  color: #141526;
+}

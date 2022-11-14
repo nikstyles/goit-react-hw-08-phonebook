@@ -1,0 +1,33 @@
+.login_form {
+  padding: 10px;
+  background: #26273b;
+  border-radius: 10px;
+}
+
+.input_list {
+  border-radius: 10px;
+  padding: 15px;
+
+  background: #141526;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.login_btn {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+  margin-top: 10px;
+
+  background: #26273b;
+  color: #6afff3;
+  border: 1px solid #6afff3;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.login_btn:hover {
+  cursor: pointer;
+  background: #6afff3;
+  color: #141526;
+}

@@ -1,0 +1,27 @@
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 15px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6afff3;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}

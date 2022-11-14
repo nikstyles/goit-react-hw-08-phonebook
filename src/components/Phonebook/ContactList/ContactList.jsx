@@ -1,20 +1,14 @@
 import PropTypes from 'prop-types';
-import ContactItem from 'components/ContactItem/ContactItem';
+import ContactItem from 'components/Phonebook/ContactItem/ContactItem';
 import s from './ContactList.module.css';
 
-export default function ContactList({ contacts, onDeleteContact }) {
+export default function ContactList({ contacts }) {
   console.log(contacts);
   return (
     <>
       <ul className={s.contacts__list}>
         {contacts?.map(({ id, name, number }) => (
-          <ContactItem
-            key={id}
-            id={id}
-            name={name}
-            number={number}
-            onDeleteContact={onDeleteContact}
-          />
+          <ContactItem key={id} id={id} name={name} number={number} />
         ))}
       </ul>
     </>
@@ -22,7 +16,6 @@ export default function ContactList({ contacts, onDeleteContact }) {
 }
 
 ContactList.propTypes = {
-  onDeleteContact: PropTypes.func.isRequired,
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,

@@ -1,0 +1,30 @@
+.formGroup {
+  width: 260px;
+  display: flex;
+
+  margin-bottom: 15px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field {
+  padding: 10px 15px;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 10px;
+
+  border: none;
+  background-color: #141526;
+  color: #fff;
+
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.label {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}

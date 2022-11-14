@@ -2,15 +2,15 @@ import { nanoid } from 'nanoid';
 import PropTypes from 'prop-types';
 import s from './ContactForm.module.css';
 import { RiUserAddFill } from 'react-icons/ri';
-
-import useLocalStorage from 'hooks/useLocalStorage';
+import { useState } from 'react';
+// import useLocalStorage from 'hooks/useLocalStorage';
 
 export default function ContactForm({ addContact }) {
-  const [name, setName] = useLocalStorage('name', '');
-  const [number, setNumber] = useLocalStorage('number', '');
+  // const [name, setName] = useLocalStorage('name', '');
+  // const [number, setNumber] = useLocalStorage('number', '');
 
-  // const [name, setName] = useState('');
-  // const [number, setNumber] = useState('');
+  const [name, setName] = useState('');
+  const [number, setNumber] = useState('');
 
   const nameId = nanoid();
   const numberId = nanoid();

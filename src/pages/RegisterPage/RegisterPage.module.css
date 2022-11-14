@@ -1,0 +1,9 @@
+.register_form {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1140px) {
+  .register_form {
+    padding: 150px;
+  }
+}
