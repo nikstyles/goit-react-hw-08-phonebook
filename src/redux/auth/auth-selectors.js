@@ -4,4 +4,3 @@ export const getUser = state => {
 };
 export const getLoadingUserStatus = ({ auth }) => auth.isLoadingUser;
 export const getError = ({ auth }) => auth.error;
-console.log(getError);
