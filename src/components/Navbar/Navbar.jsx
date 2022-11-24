@@ -37,9 +37,9 @@ const Navbar = () => {
               <NavbarMenu openBtn={setOpenMenu} openMenu={openMenu} />
             )}
             {isLogin ? (
-              <NavbarUser openMenu={openMenu} />
+              <NavbarUser openBtn={setOpenMenu} openMenu={openMenu} />
             ) : (
-              <NavbarAuth openMenu={openMenu} />
+              <NavbarAuth openBtn={setOpenMenu} openMenu={openMenu} />
             )}
             {!matches && (
               <MobileBtn openBtn={setOpenMenu} openMenuBoolin={openMenu} />

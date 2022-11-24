@@ -4,12 +4,13 @@ import { logout } from '../../../redux/auth/auth-operations';
 import { getUser } from '../../../redux/auth/auth-selectors';
 import s from './NavbarUser.module.css';
 
-export default function NavbarUser({ openMenu }) {
+export default function NavbarUser({ openMenu, openBtn }) {
   const dispatch = useDispatch();
   const { name } = useSelector(getUser);
 
   const onLogout = () => {
     dispatch(logout());
+    openBtn(false);
   };
 
   return (
