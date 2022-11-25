@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 15px;
   overflow-y: scroll;
-  max-height: 40vh;
+  max-height: 30vh;
   /* -webkit-overflow-scrolling: touch; */
 }
 
