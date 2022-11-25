@@ -39,12 +39,16 @@
     width: 100%;
     height: 100vh;
     background-color: #141526;
-    z-index: 10;
+    z-index: -1;
     transition: left 1s;
+    /* visibility: hidden; */
   }
 
   .active {
     left: 0;
+    z-index: 10;
+
+    /* visibility: inherit; */
   }
 
   .ul {
