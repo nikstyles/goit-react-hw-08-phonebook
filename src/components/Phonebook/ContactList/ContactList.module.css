@@ -3,6 +3,7 @@
   margin-top: 15px;
   overflow-y: scroll;
   max-height: 40vh;
+  -webkit-overflow-scrolling: touch;
 }
 
 .contacts__list::-webkit-scrollbar {
