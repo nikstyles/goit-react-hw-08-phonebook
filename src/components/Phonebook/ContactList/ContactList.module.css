@@ -1,4 +1,23 @@
 .contacts__list {
   position: relative;
   margin-top: 15px;
+  overflow-y: scroll;
+  max-height: 40vh;
+}
+
+.contacts__list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.contacts__list::-webkit-scrollbar-track {
+  background: #141526;
+  border-radius: 5px;
+}
+
+.contacts__list::-webkit-scrollbar-thumb {
+  background: #434453;
+  border-radius: 5px;
+}
+.contacts__list::-webkit-scrollbar-thumb:hover {
+  background: #565763;
 }

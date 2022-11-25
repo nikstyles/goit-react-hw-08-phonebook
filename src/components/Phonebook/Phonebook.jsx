@@ -51,24 +51,30 @@ export default function Phonebook() {
     <div className={s.phonebook}>
       <div className={s.phonebook__card}>
         <h1 className={s.phonebook__title}>Phonebook</h1>
-        <ContactForm addContact={formSubmitHandler} />
+        <div className={s.wrapper}>
+          <div className={s.contact_form}>
+            <ContactForm addContact={formSubmitHandler} />
+          </div>
 
-        <div className={s.phonebook__wrapper}>
-          <h2 className={s.phonebook__second_title}>Contacts</h2>
-          <MoonLoader
-            color={'#6afff3'}
-            loading={loading}
-            size={15}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
+          <div className={s.contact_list}>
+            <div className={s.phonebook__wrapper}>
+              <h2 className={s.phonebook__second_title}>Contacts</h2>
+              <MoonLoader
+                color={'#6afff3'}
+                loading={loading}
+                size={15}
+                aria-label="Loading Spinner"
+                data-testid="loader"
+              />
+            </div>
+            <Filter />
+            {items.length === 0 ? (
+              <p className={s.empty__text}>Phone book is empty</p>
+            ) : (
+              <ContactList contacts={items} />
+            )}
+          </div>
         </div>
-        <Filter />
-        {items.length === 0 ? (
-          <p className={s.empty__text}>Phone book is empty</p>
-        ) : (
-          <ContactList contacts={items} />
-        )}
       </div>
       <ToastContainer
         theme="colored"

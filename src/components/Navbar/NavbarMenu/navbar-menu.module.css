@@ -53,5 +53,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0;
+  }
+  .link {
+    font-size: 24px;
+    border-bottom: none;
+  }
+
+  .link:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: #ff4800;
+  }
+
+  .link.active {
+    /* background-color: rgb(255, 72, 0); */
+    color: #ff4800;
+    border-bottom: none;
   }
 }

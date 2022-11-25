@@ -1,9 +1,10 @@
 .login_form {
   display: flex;
   justify-content: center;
+  padding-top: 20vh;
 }
-@media screen and (min-width: 1140px) {
+/* @media screen and (min-width: 1140px) {
   .login_form {
-    padding: 180px;
+    padding-top: 20vh;
   }
-}
+} */

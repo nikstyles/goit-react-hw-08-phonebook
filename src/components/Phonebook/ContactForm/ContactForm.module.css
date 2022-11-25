@@ -3,10 +3,11 @@
   border-collapse: collapse;
   margin-top: 10px;
   margin-bottom: 10px;
+  min-width: 100%;
 }
 
 .form__list {
-  width: 280px;
+  /* min-width: 100%; */
   margin: 0 auto;
   border-radius: 10px;
   padding: 10px;
@@ -21,6 +22,7 @@
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
+  padding-right: 10px;
 }
 
 .form__title {
@@ -29,6 +31,9 @@
 }
 
 .form__input {
+  /* max-width: 500px; */
+  min-width: 70%;
+  margin-left: 20px;
   border: none;
   background: #141526;
   color: #fff;
